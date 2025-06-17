@@ -3,11 +3,21 @@ html{
                 height: 100%;
             }
             body {
-                background-color: lightblue;
+                background-color: darkcyan;
                 color: whitesmoke;
                 font-family: Arial, sans-serif;
                 ;
             }
             h1 {
                 text-align: center;
+            }
+            a{
+                color:aliceblue;
+
+            }
+            a:visited {
+                color: lightgrey;
+            }
+            a:hover,a:active {
+                color: #eee;
             }
