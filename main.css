@@ -1,0 +1,13 @@
+html{
+                font-size: 22px;
+                height: 100%;
+            }
+            body {
+                background-color: lightblue;
+                color: whitesmoke;
+                font-family: Arial, sans-serif;
+                ;
+            }
+            h1 {
+                text-align: center;
+            }
