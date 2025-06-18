@@ -8,112 +8,220 @@
         <title>About Violet</title>
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
+
     <body>
         <header>
             <p>Welcome to my page</p>
-        <hr>
-            <nav>
+            <hr><!-- semantic wise shows that there is a topic change-->
+            <nav aria-label="primary -navigation "><!-- The nav element is used to define a set of navigation links. -->
+                <!-- when we label the heading we can change the aria to a labelled by-->
                 <ul>
                     <li> <a href="#about-violet"> About me</a></li><!-- This creates a link to a section in the same page.-->
                     <li> <a href="#learning-journey"> Learning Journey</a></li>
+                    <li> <a href="#contact">contact me</a></li>
                     <li> <a href="index.html"> Main Page</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="about-violet">
-        <h1>About Violet</h1>
-        <p>Hello! I'm Violet, and I'm learning HTML and CSS to create beautiful web pages.</p>
-        <p>My journey started with a simple curiosity about how websites are built.</p>
-        <p>I'm excited to share my progress and learn more about web development!</p>
-        </section >
         <hr>
-        
-        <section id="learning-journey">
-        <h2>Violet's learning journey</h2>
-        <img src="img/p5.jpg" alt="A picture of Violet" title="learning html" width="200" height="200">
-        <figure><!--img src shows where the image comes from and alt shows alternative text if the image doesn't load-->>
-            <figcaption>
-                Violet learning HTML and CSS.
-                <!-- The figcaption element provides a caption for the image. -->
-            </figcaption>
-            <p>
-                <code>
-                    &lt;he&gt;Hello world&lt;/he&gt;
-                    <!-- The code element is used to display code snippets. --> 
-                </code>
-            </p>
-            </figure>
-            <!-- Find images in unsplash.com and pexels.com-->
-
-        <p>In this section, I will document my learning experiences:</p>
-            <figure>
-            
-            <img src="img/learning.webp" alt="Learning Journey" title="Laptop image" width="300" height="200" loading="lazy"><!-- The loading attribute is used to control when the image is loaded.and lazy makes it load only when needed -->
-            <figcaption>
-                Agirl named Violet learning HTML and CSS on her laptop.
-                <!-- The figcaption element provides a caption for the image. -->
-            </figcaption>
-            </figure>
-        <ol>
-            <li>Understanding the basics of HTML structure</li>
-            <li>Learning about CSS styling and layout</li>
-            <li>Exploring responsive design techniques</li>
-            <li>Building my first web page from scratch</li>
-            <li>Experimenting with different HTML elements and attributes</li>
-        </ol>
-        <hr>
-        
-        <figure>   
-            <img src="img/learning2.jpg" alt="Learning Journey 2" title="Learning Journey 2" width="300" height="200" loading="lazy">
-            <!-- This image shows Violet's learning journey in HTML and CSS --> 
-            <figcaption>
-                learning HTML and CSS with a focus on practical projects.
-            </figcaption> 
-
-        </figure>
-        <p> My python learning journey</p>
-        <ul>
-            <li>Starting with Python basics</li>
-            <li>Understanding data types and variables</li>
-            <li>Learning about control structures (if statements, loops)</li>
-            <li>Exploring functions and modules</li>
-            <li>Building small projects to apply my knowledge</li>
-        </ul>
-        <dl> 
-            <dt>Age</dt>   
-            <dd>I am 19 years old</dd>
-            <dt>Birthday</dt>
-            <dd>My birthday is on 19th May</dd>
-        </dl>
-        </section><!-- This shows different sections in a page and each section needs a section id-->
-        <section id="contact">
-            <h3>Contact Information</h3>
-        <hr>
-            <p>Feel free to check out my <a href="index.html">main page</a> for more updates on my learning journey!</p>
-            <p>
-                <a href="#about-violet">Back to top</a>
-            </p>
-            <p> <a href="/"> Back to home</a></p>
+        <main>
+            <article  id="about-violet">
+                <h1>About Violet</h1>
+                <p>Hello! I'm Violet, and I'm learning HTML and CSS to create beautiful web pages.</p>
+                <p>My journey started with a simple curiosity about how websites are built.</p>
+                <p>I'm excited to share my progress and learn more about web development!</p>
+            </article >
             <hr>
-            <p>
-                <ol>
-                <li>Download an <a href="p5.jpg" download> image</a>
-                </li>
-                <li>
-                Contact me at  <a href="mailto:random@gmail.com"> my email address </a>
-                </li>
-                <li>
-                Dial<a href="+254711111111">my phone</a>
-                </li>
-                <li>
-                Open <a href ="https://www.google.com" target="_blank">google </a> in anew tab
-                </li>
-                </ol>   
-            
-            
-         </section>
-        <p>Thank you for visiting my about page!</p>
-        &lt;&lt;<strong>Violet</strong>&gt;&gt; 
-        
+             <!-- articles are more clear than sections-->   
+            <article id="learning-journey">
+                <h2>Violet's learning journey</h2>
+                <section>
+                        <h3>Learning HTML and CSS</h3>
+                        <p>In this section, I will document my learning experiences:</p>
+
+                        <img src="img/p5.jpg" alt="A picture of Violet" title="learning html" width="200" height="200">
+                        <figure><!--img src shows where the image comes from and alt shows alternative text if the image doesn't load-->>
+                            <figcaption>
+                            Violet learning HTML and CSS.
+                            <!-- The figcaption element provides a caption for the image. -->
+                            </figcaption>
+                            </figure>
+                                <code>&lt;h&gt;Hello world&lt;/h&gt;</code> 
+                                <!-- The code element is used to display code snippets. --> 
+                                                       
+                        
+                </section>
+                
+                <section>
+                    <h3>My Learning Journey</h3>
+                        <!-- Find images in unsplash.com and pexels.com , use irfanview.com for resizing images also use tinypng.com-->
+                    <p>In this section, I will document my learning experiences:</p>
+                    <figure>
+                    
+                        <img src="img/learning.webp" alt="Learning Journey" title="Laptop image" width="300" height="200" loading="lazy"><!-- The loading attribute is used to control when the image is loaded.and lazy makes it load only when needed -->
+                        <figcaption>
+                            A girl named Violet learning HTML and CSS on her laptop.
+                            <!-- The figcaption element provides a caption for the image. -->
+                        </figcaption>
+                    </figure>
+                    <ol>
+                        <li>Understanding the basics of HTML structure</li>
+                        <li>Learning about CSS styling and layout</li>
+                        <li>Exploring responsive design techniques</li>
+                        <li>Building my first web page from scratch</li>
+                        <li>Experimenting with different HTML elements and attributes</li>
+                    </ol>
+                </section>
+                <!-- spans and divs have no meaning on their own instead use semantic elements-->
+                <hr>
+                <section>
+                    <h4>Learning Python</h4>
+                    <p>In this section, I will document my Python learning journey:</p>
+                    <figure>   
+                        <img src="img/learning2.jpg" alt="Learning Journey 2" title="Learning Journey 2" width="300" height="200" loading="lazy">
+                        <!-- This image shows Violet's learning journey in HTML and CSS --> 
+                        <figcaption>
+                            learning HTML and CSS with a focus on practical projects.
+                        </figcaption> 
+
+                    </figure>
+                    <p> My python learning journey</p>
+                    <ul>
+                        <li>Starting with Python basics</li>
+                        <li>Understanding data types and variables</li>
+                        <li>Learning about control structures (if statements, loops)</li>
+                        <li>Exploring functions and modules</li>
+                        <li>Building small projects to apply my knowledge</li>
+                    </ul>
+                    <dl> 
+                        <dt>Age</dt>   
+                        <dd>I am 19 years old</dd>
+                        <dt>Birthday</dt>
+                        <dd>My birthday is on 19th May</dd>
+                    </dl>
+            </section>
+            </article>
+
+            <article><!-- This shows different sections in a page and each section needs a section id-->
+                <h5>Contact Information</h5>
+                <section id="contact">
+                    <h5>Contact Information</h5>
+                    <hr>
+                    <p>Feel free to check out my <a href="index.html">main page</a> for more updates on my learning journey!</p>
+
+                    <p> <a href="#about-violet">Back to top</a> </p>
+
+                    <p> <a href="/"> Back to home</a></p>
+                    <hr>
+                    <p>
+                        <ol>
+                            <li> Download an <a href="p5.jpg" download> image</a> </li>
+                            <li> Contact me at  <a href="mailto:random@gmail.com"> my email address </a> </li>
+                            <li> Dial<a href="+254711111111">my phone</a> </li>
+                            <li> Open <a href ="https://www.google.com" target="_blank">google </a> in anew tab </li>
+                        </ol>
+                        <aside>
+                            <details>
+                                <summary>More about me</summary><!-- The summary creates a collapsible section and should be more like a question-->
+                                <p>I <mark>love learning </mark> new things and sharing my knowledge with others.</p>
+                                <p>Feel free to reach out if you have any questions or want to connect!</p>
+                            </details>
+                        </aside>
+                        <aside>
+                            <details>
+                                <summary> Guess the number of <mark>hours</mark> i code per day</summary>
+                                <p> I code for about <strong>3 hours</strong> daily.</p>
+                                <p> i start at<time datetime="08:00"> 8am </time>and i write for all the <time datetime="PT3H">3 hours</time></p>
+                            </details>
+                        </aside>
+                        <br>
+                        <table>
+                            <caption>My Daily Schedule</caption>
+                            <!-- The caption element provides a title for the table. -->
+                            <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row"> Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am </time>-<time datetime="11:00">11am </time>
+                                </td>
+                                <td>Write code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> Break</th>
+                                <td>
+                                    <time datetime="11:00">11am </time>-<time datetime="12:00">12pm </time>
+                                </td>
+                                <td>Eat Lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> Afternoon</th>
+                                <td>
+                                    <time datetime="12:00">12pm </time>-<time datetime="17:00">5pm </time>
+                                </td>
+                                <td>Study other courses</td>
+                            </tr>
+                            <tr> 
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All other times</td>
+                                <td>Free time</td><!--colspan="2"-->
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+
+                                <tr class="table-footer">
+                                    <td colspan="3">This is my daily schedule for a week code,eat,sleep</td  >
+
+                                </tr>
+                            </tfoot>
+                        </table>  
+                    
+                    
+                </section>
+            </article>
+            <hr>
+            <article id="contact">
+                <h2>Contact me</h2>
+                <p>I'd really like to hear from you</p>
+                <form action="htttps://httbin.org/get" method="get">
+                    <p>>
+                    <label for="firstName">first Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required autocomplete="on" autofocus>
+                    </p>
+                    <p>
+                    <label for="lastName">last Name:</label>
+                    <input type="text" id="lastName name="lastName" placeholder="Enter your last name" required autocomplete="on" >
+                    </p>
+                    <p>
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password" placeholder="secret" required  >
+                    </p>
+                    <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="2547000000" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+                    </p>
+                    <p>
+                    <label for="decade"> Favorite Decade:</label>
+                    <input type="number" id="decade" min="1990" max="2020" step="10" value="1990" >
+                    </p>
+                </form>
+
+            </article>
+        </main>
+        <footer> 
+            <p>Thank you for visiting my about page!
+            &lt;&lt;<strong>Violet</strong>&gt;&gt; 
+            </p>
+        </footer>
 
     </body>
