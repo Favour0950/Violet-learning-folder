@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Violet">
+    <meta name="description" content="Contact Us - The Little Taco Shop">
+    <title>Contact Us - The Little Taco Shop</title>
+    <link rel="icon" href="/web_practiseproject/images/taco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <header>
+        <nav aria-label="contactus-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#About-LTS">About <abbr title="Little Taco Shop">LTS</abbr></a></li>
+                <li><a href="index.html#Our-Menu">Our Menu</a></li>
+                <li><a href="storehours.html">Store hours</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="./images/delitaco.png" alt="Tacos on a plate" width="400" height="400">
+            <figcaption>
+                <p>Delicious Tacos</p>
+            </figcaption>
+        </figure>
+    </header>
+    <hr>
+    <main>
+        <br>
+        <form action="contactus.php" method="post" id="contactus-form">
+        <h2>Our Contact form</h2>
+             <fieldset>
+                <legend> Send us a message</legend>
+                    <p><label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name here..." required>
+                    </p>
+                    <p>>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email here..." required>
+                    </p>               
+                    <p>
+                        <label for="message">Your message</label>
+                        <textarea name="message" id="message" rows="10" cols="30" placeholder="Type your message here..." ></textarea>
+                    </p>                    
+                
+                </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        </form>
+        <br>
+        <p>For more information, please contact us at <a href="mailto:random@gmail.com">this email</a></p>
+        <h2>Our Location</h2>
+        <p>
+            We are located at:
+            <br>
+            </p>
+            <address>
+                123 Taco Lane<br>
+                Taco Town, TX 12345<br>
+                United States
+            </address>
+       
+        <p>
+            Phone:<a href="tel:+1234567890">+1 (234) 567-890</a>
+         
+        <a href="#">Back to top</a>
+        </p>       
+    </main>
+    <footer>
+        <p>&copy; 2023 The Little Taco Shop. All rights reserved.</p>
+    </footer>
+</html>
