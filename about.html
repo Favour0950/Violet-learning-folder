@@ -190,17 +190,20 @@
                 </section>
             </article>
             <hr>
-            <article id="contact">
+            <article id="contacts">
                 <h2>Contact me</h2>
                 <p>I'd really like to hear from you</p>
                 <form action="htttps://httbin.org/get" method="get">
+                    <fieldset>
+                        <legend> Personal Info</legend>
                     <p>>
                     <label for="firstName">first Name:</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required autocomplete="on" autofocus>
+                    <input type="text" id="firstName" name="first Name" placeholder="Enter your first name" required autocomplete="on" autofocus>
                     </p>
                     <p>
                     <label for="lastName">last Name:</label>
-                    <input type="text" id="lastName name="lastName" placeholder="Enter your last name" required autocomplete="on" >
+                    <input type="text" id="lastName"  name="last Name"
+                    placeholder="Enter your last name" required autocomplete="on" >
                     </p>
                     <p>
                     <label for="password">password:</label>
@@ -208,12 +211,88 @@
                     </p>
                     <p>
                     <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="2547000000" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+                    <input type="tel" id="phone" name="phone" placeholder="254700000000" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{3}" >
                     </p>
                     <p>
                     <label for="decade"> Favorite Decade:</label>
-                    <input type="number" id="decade" min="1990" max="2020" step="10" value="1990" >
+                    <input type="number" id="decade" min="1950" max="2020" step="10" value="1990" >
                     </p>
+                 <!--    <p>
+                        <label for="coffee">Favorite coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5" >
+                            <optgroup label="Coffees">
+                            <option value="Regular coffee">REGULAR COFFEE:</option>
+                            <option value="Iced Coffee">ICED COFFEE</option>
+                            </optgroup>
+                            <optgroup label="Espresso-based drinks">
+                            <option value="Cappuccino">CAPPUCCINO</option>
+                            <option value="Latte" selected>LATTE</option>
+                            <option value="Americano">AMERICANO</option>
+                            </optgroup>
+                            <option value="other">OTHER</option>
+                        </select>
+                    </p> -->
+                    <p>
+                        <label for="coffee">Favorite Coffee</label>
+                        <input type="text" name="coffee" id="coffee" list="Coffeelist" placeholder="Choose your favorite coffee">
+                        <datalist id="Coffeelist"><!-- The datalist element provides a list of predefined options for an input field. -->
+                            <option value="Regular Coffee">
+                            <option value="Iced Coffee">
+                            <option value="Cappuccino">
+                            <option value="Latte" selected>
+                            <option value="Americano">
+                            <option value="Other">
+                        </datalist>
+                    </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favorite food:</legend>
+                        <p>
+                            <input type="radio" name="food" id="Tacco" value="Tacco" ><!-- The radio input allows the user to select one option from a set. -->
+                            <label for="Tacco">Tacco</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="Pizza" value="Pizza" ><!-- The radio input allows the user to select one option from a set. -->
+                            <label for="Pizza">Pizza</label>
+                        </p>
+                        <!--They should have the same name for all radio types-->
+                        <p>
+                            <input type="radio" name="food" id="Other" value="Other" ><!-- The radio input allows the user to select one option from a set. -->
+                            <label for="Other">Other</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Do you have Pets?</legend>
+                        <p>
+                            <input type="checkbox" name="pets" id="dog" value="dog">
+                            <label for="dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="cat" value="cat">
+                            <label for="cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="Fish" value="Fish">
+                            <label for="Fish">Fish</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="Otherpet" value="Otherpet">
+                            <label for="Otherpet">OtherPet</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend> Send me a note</legend>
+                        <label for="message">Your message</label>
+                        <br>
+                        <textarea name="message" id="message" rows="10" cols="30" placeholder="Type your message here..." ></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Res</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
                 </form>
 
             </article>
