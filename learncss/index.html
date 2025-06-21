@@ -1,0 +1,205 @@
+<!--website about Cats-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Violet">
+    <meta name="description" content="A simple webpage about cats">
+    <title>Cat Lovers</title>
+    <link rel="icon" href="./images/cat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <link href=" https:?//fonts.googleapis.com/css?family=lobster" rel="stylesheet" type="text/css">
+    <style>
+       /*  [type="text/css"] {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: lightgrey;
+            margin: 10px 0px 10px 10px;
+            padding: 0;
+
+        }
+        #cat-facts {
+            background-color: lightblue;
+            padding: 20px 10px 30px 10px;
+            margin: 20px 40px 30px 10px;
+            border: 2px solid darkblue;          
+        }
+        p {
+            color:brown;
+            font-size: 20px;
+            font-family: monospace;
+        }
+        h{
+            color:blue;
+        }
+        .blue-text{
+            color:blue;
+            font-size: 30px;
+
+        }
+        .red-text{
+            color:red;
+        }
+        h1{
+            font-family: 'Lobster',sans-serif;
+            color: darkblue;
+            text-align: center;
+            background-color: lightyellow;
+        }
+        .silver-background {
+            background-color: silver;
+        }
+        .smaller-image {
+            width: 200px;
+            height: auto;
+        }
+        .thick-green-border {
+            border: 5px solid green;
+            border-radius: 10px;
+            border-style: solid;
+        } */
+    .d1{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid darkblue;
+            flex-direction: row;
+        }
+        .d2{
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid darkgreen;
+        }
+        .d3{
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid darkred;
+        }
+        .d4{
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid goldenrod;
+        }
+        .d5{
+            background-color: lightpink;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid deeppink;
+            align-self: center;
+        }    
+        .container{
+            font-size: 5em;
+            width: 100%;
+            background: lightgray;
+            display: flex;
+           
+
+            
+        }
+        /* This is a comment in CSS, it will not be displayed on the webpage 
+        flex is used to create a flexible layout
+        The container class is used to create a flex container
+        The d1, d2, d3, d4, and d5 classes are used to create flex items
+        The flex-direction property is used to set the direction of the flex items
+        The row value sets the direction to be horizontal
+        The column value sets the direction to be vertical
+        you can use the flex property to set the size of the flex items instead of setting grow shrink and basis separately
+        The align-self property is used to set the alignment of a flex item
+        The justify-content property is used to set the alignment of the flex items in the container
+        The align-items property is used to set the alignment of the flex items in the container
+        The flex-wrap property is used to set whether the flex items should wrap onto multiple lines
+        The flex-basis property is used to set the initial size of a flex item before it is adjusted by flex-grow and flex-shrink
+        the order property is used to set the order of a flex item in the container
+        The flex-grow property is used to set how much a flex item should grow relative to the other flex items in the container
+        */
+    </style>
+    <h1 class="blue-text silver-background">Cat Lovers</h1>
+    <!--inline styles are where you add style to a single line-->
+    <header>
+        <nav aria-label="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+            </ul>
+        </nav>
+        <figure>
+            <img class="smaller-image thick-green-border" src="./images/cat1.jpg" alt="A cute cat" >
+            <figcaption>
+                <p>Cute Cat</p>
+            </figcaption>
+        </figure>
+    </header>
+    <hr>
+    <main>
+        <div class="container">
+            <div class="d1">d1</div>
+            <div class="d2">d2</div>
+            <div class="d3">d3</div>
+            <div class="d4">d4</div>
+            <div class="d5">d5</div>    
+        </div>
+        <section>
+        <h2>Welcome to Cat Lovers!</h2>
+        <p class="red-text" >We are passionate about cats and love sharing information, photos, and stories about our feline friends.</p>
+        <p>Feel free to explore our site and learn more about the wonderful world of cats!</p>
+        <p>We believe that cats are not just pets, but family members who bring joy and companionship to our lives.</p>
+        </section>
+        <section class="blue-text" id="cat-facts" style="color: blueviolet;">
+            <h3>Things Cats love</h3>
+            <ul>
+                <li>laser pointers</li>
+                <li> Playing</li>
+                <li> scratch posts</li>
+                <li>sleeping</li>
+            </ul>
+            
+        </section>
+        <section>
+            <h3>Cat Breeds</h3>
+            <ol>
+                <li>Siamese</li>
+                <li>Persian</li>
+                <li>Maine</li>
+                <li>Ragdoll</li>
+                <li>British Shorthair</li>
+            </ol>
+            <h4>More about cats</h4> 
+            <p>Cats are cute and can be kept as pets. They are very friendly</p>  
+            <p>They are also very independent and can be left alone for a while.</p>
+            <p>They are also very playful and love to chase things.</p>
+            <aside>
+                <summary>Did you know?</summary>
+                <details>
+                    <p>Cats have been domesticated for thousands of years and were revered in ancient Egypt.</p>
+                    <p>They can make over 100 different sounds, while dogs can only make about 10.</p>
+                    <p>A group of cats is called a clowder, and a group of kittens is called a kindle.</p>
+                </details>
+            </aside>            
+        </section>
+        <section>
+            <a href="https://www.catbreeds.com" target="_blank">Learn more about cat breeds</a>
+            <p> Find down here cute kittens
+            <img src="./images/litter.jpg" alt="A cute kitten" >
+            </p>
+
+        </section>
+        
+
+
+
+
+    </main>
+
+    <footer>
+        <a href="#">Back to top</a>
+        <p>&copy; 2023 Cat Lovers. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

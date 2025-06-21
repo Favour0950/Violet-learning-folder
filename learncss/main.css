@@ -1,0 +1,112 @@
+        /*creating variables in css*/
+        .penguion{
+        --penguin-skin:gray;
+        --penguin-belly:white;
+        --penguin-beak:orange;
+        --penguin-eye:black;
+        }
+        /* The penguin class is used to style elements with the class "penguin" */
+        :root {
+            --penguin-skin: gray;
+            --penguin-belly: white;
+            --penguin-beak: orange;
+            --penguin-eye: black;
+        }
+        /* The :root selector is used to define CSS variables that can be used throughout the document */
+        /*creating media queries in css. This is used to apply styles based on the screen size */
+        @media (max-width: 200px) {
+            body {
+                background-color: lightblue;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+        [type="text/css"] {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: lightgrey;
+            margin: 10px 0px 10px 10px;
+            padding: 1.5em;
+        }
+        [type="radio"]{
+            margin: 10px 0px 10px 10px;
+            padding: 10px 0px 10px 10px;
+        }
+
+        [type="checkbox"] {
+            margin: 10px 0px 10px 10px;
+            padding: 10px 0px 10px 10px;
+        }
+        /* # cat facts is used for styling articles while dot notation is used for classes */
+        /* The id selector is used to style a single element, while the class selector is used
+           to style multiple elements. */
+        #orange-text {
+            color: orange;
+            font-size: 30px;
+            font-family: monospace;
+            margin: 10px 0px 10px 10px;
+            padding: 1.5em;
+        }
+        /* The id selector is used to style a single element, while the class selector is used
+           to style multiple elements. 
+           The id is more specific and overrides class styling*/
+        
+        #cat-facts {
+            background-color: lightblue;
+            padding: 20px 10px 30px 10px;
+            margin: 20px 40px 30px 10px;
+            border: 2px solid darkblue;          
+        }
+        p {
+            color:brown;
+            font-size: 20px;
+            font-family: monospace;
+        }
+        h{
+            color:blue;
+        }
+        .blue-text{
+            color:#f01 !important;/* The !important rule overrides any other styles applied to the element */
+            font-size: 30px;
+
+        }
+        .red-text{
+            color:red;
+        }
+        h1{
+            font-family: 'Lobster',sans-serif;
+            color: darkblue;
+            text-align: center;
+            background-color: lightyellow;
+        }
+        .silver-background {
+            background-color: silver;
+        }
+        .smaller-image {
+            width: 200px;
+            height: auto;
+        }
+        .thick-green-border {
+            border: 5px solid green;
+            border-radius: 20px;
+            border-style: solid;
+            padding: 1.5em;
+            margin: 20px;
+            width: 300px;
+            height: 200px;
+            
+        }
+        body{
+            background-color: rgb(255,160,210);
+            color : var(--penguin-skin);
+            font-family:monospace
+        }
+        /*body styling is more general and applies to the entire document, while the
+           .thick-green-border class is more specific and applies to elements with that class. */
+    
